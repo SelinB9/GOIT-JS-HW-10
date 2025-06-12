@@ -29,7 +29,10 @@ const options = {
     const now = new Date();               //! selectedDates Flatpickr tarafından gönderilen tarih dizisidir.
 
     if (selectedDate <= now) {
-        window.alert("Please choose a date in the future");
+      iziToast.info({
+        title: "Uyarı",
+        message: "Please choose a date in the future"
+      });
         startBtn.disabled = true;
         userSelectedDate = null;
     } else {
@@ -83,13 +86,13 @@ startBtn.addEventListener('click', () => {
     // Eğer kullanıcı tarih seçmemişse buraya girer
     iziToast.error({
       title: 'Hata',
-      message: 'Lütfen önce bir tarih seçin.',
+      message: 'Lütfen önce bir tarih seçin.'
     });
   } else {
     // Geçerli tarih varsa buraya girer
     iziToast.info({
       title: 'The countdown has begun',
-      message: `userSelectedDate: ${userSelectedDate.toLocaleString()}`,
+      message: `userSelectedDate: ${userSelectedDate.toLocaleString()}`
     });
 
     startBtn.disabled = true; //bu kodu tekrar buraya yazmamızın nedeni start a basıp sayaç başlatıldığında start butonunu devre dışı bırakmak tekrar basılamasın
