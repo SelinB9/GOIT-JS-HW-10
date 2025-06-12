@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+  <script type="module" crossorigin src="/GOIT-JS-HW-10/1-timer.js"></script>
+  <link rel="modulepreload" crossorigin href="/GOIT-JS-HW-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/GOIT-JS-HW-10/assets/vendor-BbbuE1sJ.js">
+  <link rel="stylesheet" crossorigin href="/GOIT-JS-HW-10/assets/vendor-CZjNVMTf.css">
+</head>
+<body>
+    <p>merhaba!</p>
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start>Start</button>
+    
+    <div class="timer">
+        <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+        </div>
+        <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+    <style>
+          .timer {
+    display: flex;
+    gap: 10px;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+    </style>
+      
+    <!-- JS dosyasını buradan çağırıyoruz -->
+
+</body>
+</html>
