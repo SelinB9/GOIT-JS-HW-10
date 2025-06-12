@@ -15,8 +15,6 @@ export default defineConfig(({ command }) => {
       sourcemap: true,
       rollupOptions: {
         input: '/index.html',
-        timer: '/1-timer.html',
-        snackbar: '/2-snackbar.html',
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
